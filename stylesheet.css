@@ -1,0 +1,106 @@
+html{
+  font-size: 100%;
+}
+body{
+  background-color: white;
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+}
+img{
+  max-width: 100%;
+}
+
+
+.wrapper{
+  margin: 0 auto;
+  padding: 30px 15%;
+}
+.header{
+  height: 50px;
+  margin: 0, auto;
+}
+.top-list{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+li {
+  list-style-type: none;
+}
+.nav-item{
+  padding: 20px;
+  text-decoration: none;
+  font-size: large;
+}
+.home{
+  background-color: dimgray;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height:200px;
+}
+
+/* main */
+h3{
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.title{
+  margin-bottom:40px
+}
+.about-contents {
+  display: flex;
+  flex-direction: row;
+}
+.about-left{
+ width:30%;
+ margin-right: 50px;
+}
+.about-right{
+  width:70%;
+}
+.about-img{
+  border-radius: 20px;
+}
+
+.about, .contact{
+  background-color: #EEEEEE;
+}
+.skill-contents{
+ text-align: center;
+}
+.skill-item{
+  margin-bottom:15px;
+}
+.skill-img{
+  height:50px;
+}
+table{
+  width: 900px;
+}
+tr{
+  height:100px;
+}
+.kind, .star{
+  width: 15%;
+  text-align: center;
+}
+
+.work-contents{
+  display: flex;
+}
+.work-left{
+  width:50%;
+  margin-right:20px;
+}
+.work-right{
+  width:50%;
+}
+
+footer{
+  background-color: dimgray;
+  height: 50px;
+}
