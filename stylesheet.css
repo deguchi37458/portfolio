@@ -104,7 +104,7 @@ footer{
   height: 50px;
 }
 
-@media(max-width){
+@media(max-width: 600px){
   .work-contents{
     flex-direction: column;
   }
