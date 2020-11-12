@@ -9,7 +9,6 @@ img{
   max-width: 100%;
 }
 
-
 .wrapper{
   margin: 0 auto;
   padding: 30px 15%;
@@ -103,4 +102,12 @@ tr{
 footer{
   background-color: dimgray;
   height: 50px;
+}
+
+@media(max-width){
+  .work-contents{
+    flex-direction: column;
+  }
+
+
 }
