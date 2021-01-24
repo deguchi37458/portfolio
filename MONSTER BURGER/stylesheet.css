@@ -1,0 +1,82 @@
+@charset "utf-8";
+* { margin: 0; padding: 0; }
+
+html{
+  font-size: 100%;
+}
+body{
+  background-image: url("img/back.png");
+  height: 2100px;
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+}
+img{
+  max-width: 100%;
+  height:auto;
+}
+
+.container{
+  text-align: center;
+  margin-bottom: 77px;
+}
+
+header{
+  /* display: flex;
+  justify-content: space-between; */
+  position: relative;
+}
+
+.header_contents{
+  margin-left: 85px;
+  margin-top: 80px;
+  text-align: left;
+}
+
+.logo{
+  display: block;
+  margin-bottom: 28px;
+} 
+
+li{
+  
+  list-style: none;
+  display: inline-block;
+  margin-right: 27px;
+}
+
+.header_img{
+  text-align: right;
+  width:628px;
+  position: absolute;
+  right:0;
+  top:-85px;
+}
+
+
+
+h1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 40px;
+  margin-bottom: 28px;
+}
+
+.gallery_contents img{
+  width:776px;
+}
+
+iframe{
+  margin-bottom: 55px;
+}
+
+/* タブレット */
+@media screen and (max-width:1079px){
+  .header_contents,
+  .header_img{
+    width:100%;
+  }
+}
+
+/* スマートフォン */
+@media screen and (max-width:480px){
+
+
+}

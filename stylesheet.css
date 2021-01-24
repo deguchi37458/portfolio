@@ -1,105 +1,143 @@
+@charset "UTF-8";
+
+/* reset */
+@import url(reset.css);
+
+/* 共有 */
 html{
   font-size: 100%;
 }
 body{
-  background-color: white;
-  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体";
+  background-color: #f0f0f0;
+  font-family: 'Dosis', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", cursive;
+  font-size: 16px;
 }
 img{
   max-width: 100%;
 }
-
-.wrapper{
-  margin: 0 auto;
-  padding: 30px 15%;
-}
-.header{
-  height: 50px;
-  margin: 0, auto;
-}
-.top-list{
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  margin-top: 30px;
-}
-li {
-  list-style-type: none;
-}
-.nav-item{
-  padding: 20px;
+a{
   text-decoration: none;
-  font-size: large;
 }
-.home{
-  background-color: dimgray;
-  color: white;
+p{
+  color: #515151;
+  font-size: 14px;
+  letter-spacing: 2px;
+  line-height: 30px;
+}
+
+
+/* ヘッダー */
+#header{
+  background-color: #fff;
+}
+
+nav,
+#home{
+width:1096px;
+margin:0 auto;
+}
+
+nav{
+  text-align: right;
+  line-height: 66px;
+}
+
+nav ul li{
+  display: inline-block;
+  margin-left: 30px;
+}
+nav ul li a{
+  color: #515151;
+  font-family:YuMincho, 'Yu Mincho', serif;
+  font-size: 14px;
+}
+
+#home{
+  height: 570px;
+}
+#home h1{
+  display: inline-block;
+  font-size: 45px;
+  margin-top: 20%;
+  font-family:YuMincho, 'Yu Mincho', serif;
+  font-weight: lighter;
+  color: #515151;
+}
+
+/* 包括 */
+#wrapper{
+  margin: 0 auto;
+  width: 1096px;
+}
+
+#work,
+#comment,
+#skill{
+  margin:100px auto;
+}
+
+/* 制作実績 */
+#work{
+  display: grid;
+  grid-template-columns: repeat(3, minmax(240px, 1fr));
+  gap: 100px;
+  padding: 0 5%;
+}
+
+.work_title{
+  display: inline-block;
+  text-align: left;
+  font-family: YuMincho, 'Yu Mincho', serif;
+  font-size: 16px;
+  font-weight: lighter;
+  color: #515151;
+}
+
+#skill{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height:200px;
+  flex-wrap: wrap;
 }
-
-/* main */
-h3{
-  font-size: 25px;
-  margin-bottom: 20px;
-}
-
-.title{
-  margin-bottom:40px
-}
-.about-contents {
+.skill{
+  width: 50%;
   display: flex;
-  flex-direction: row;
-}
-.about-left{
- width:30%;
- margin-right: 50px;
-}
-.about-right{
-  width:70%;
-}
-.about-img{
-  border-radius: 20px;
+  margin-bottom: 40px;
 }
 
-.about, .contact{
-  background-color: #EEEEEE;
+#skill div img{
+  width:60px;
+  height:60px;
+  margin-right: 24px;
 }
-.skill-contents{
- text-align: center;
+.skill_title{
+  font-weight: bolder;
 }
-.skill-item{
-  margin-bottom:15px;
+
+/* フッター */
+#footer{
+  background-color: #fff;
+  padding:100px 0px 50px 0px;
 }
-.skill-img{
-  height:50px;
+#about{
+  width: 1096px;
+  margin: 0 auto;
+  display: flex;
 }
-tr{
-  height:100px;
+#about img{
+  width: 120px;
+  height: 120px;
+  margin-right: 50px;
 }
-.kind, .star{
-  width: 15%;
+
+#return{
+  margin-top:100px;
   text-align: center;
 }
-
-.work-contents{
-  display: flex;
-}
-.work-left{
-  width:50%;
-  margin-right:20px;
-}
-.work-right{
-  width:50%;
+#return p{
+  font-size: 12px;
+  line-height: 15px;
 }
 
-footer{
-  background-color: dimgray;
-  height: 50px;
-}
+
 
 
 @media(max-width: 640px){
