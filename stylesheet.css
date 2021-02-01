@@ -79,7 +79,7 @@ nav ul li a{
 /* 制作実績 */
 #work{
   display: grid;
-  grid-template-columns: repeat(3, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 100px;
   padding: 0 5%;
 }
@@ -140,56 +140,8 @@ nav ul li a{
 
 
 
-@media(max-width: 640px){
-  h3{
-    margin-bottom: 0px;
+@media(max-width: 600px){
+  #wrapper{
+    width:280px;
   }
-  .wrapper{
-    margin: 0 auto;
-    padding: 30px 5%;
-  }
-  .work-contents{
-    flex-direction: column;
-  }
-  .work-left {
-    width:100%;
-    margin-bottom: 20px;
-  }
-  .work-right{
-    width:100%;
-  }
-
-  .about-contents {
-    display: flex;
-    flex-direction: column;
-  }
-  .about-left{
-   width:100%;
-   margin-bottom: 20px;
-  }
-  .about-right{
-    width:100%;
-  }
-  .about-img{
-    width: 60%;
-  }
-
-  table{
-    width: 100%;
-  }
-
-  table th,
-  table td{
-    text-align: center;
-    border-bottom: none;
-    display: block;
-    width: auto;
-  }
-  .kind, .star{
-    width: 100%;
-  }
-  .comment{
-    margin-bottom: 30px;
-  }
-  
 }
