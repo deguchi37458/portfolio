@@ -141,9 +141,18 @@ nav ul li a{
 
 
 @media(max-width: 600px){
-  #header,
+  nav,
+  #home,
   #wrapper,
-  #footer{
-    width:280px;
+  #about{
+    width:300px;
+  }
+
+  #home h1{
+    
+  }
+
+  #about img{
+    display: none;
   }
 }
