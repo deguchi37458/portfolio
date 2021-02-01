@@ -145,11 +145,12 @@ nav ul li a{
   #home,
   #wrapper,
   #about{
-    width:300px;
+    width:330px;
   }
 
   #home h1{
-    
+    font-size:35px;
+    margin-top: 50%;
   }
 
   #about img{
