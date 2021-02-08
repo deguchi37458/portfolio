@@ -13,6 +13,7 @@ img{
 }
 p{
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
+  font-size: 20px;
 }
 
 /* ホーム */
@@ -22,7 +23,7 @@ p{
   align-items: center;
   margin: 100px 0;
 }
-#home div{
+#home .logo{
   margin-right:50px;
 }
 
@@ -33,7 +34,7 @@ p{
 }
 
 /* コンセプト */
-#concept img{
+#concept>img{
  width: 216px;
 }
 
@@ -81,4 +82,42 @@ span{
 /* フッター */
 #footer{
   margin :30px 0;
+}
+
+@media(max-width:600px){
+  body{
+    width: auto;
+    margin: 0 5%;
+  }
+  p{
+    font-size: 12px;
+  }
+/* ホーム */
+  #home .logo{
+    margin-right: 10px;
+  }
+
+/* コンセプト */
+  #concept>img{
+    width:144px;
+  }
+
+  /* メニュー */
+  #menu>img{
+    width:97px;
+  }
+  #menus{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* インフォメーション */
+  #map{
+    width:auto;
+  }
+  #sns img{
+    width: 25px;
+  }
+
+
+
 }
