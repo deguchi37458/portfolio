@@ -109,7 +109,6 @@ span{
   #menus{
     grid-template-columns: 1fr 1fr;
   }
-
   /* インフォメーション */
   #map{
     width:auto;
@@ -117,7 +116,4 @@ span{
   #sns img{
     width: 25px;
   }
-
-
-
 }
