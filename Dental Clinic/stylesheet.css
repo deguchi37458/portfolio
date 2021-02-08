@@ -73,12 +73,6 @@ nav li{
 nav li a{
   color: #F6F6F6;
 }
-nav li a.first{
-  border-radius: 6px 0px 0px 6px;
-}
-nav li a.last{
-  border-radius: 0px 6px 6px 0px;
-}
 
 /* main */
 main{
@@ -136,9 +130,6 @@ ul{
   align-items: center;
   justify-content: center;
 }
-.topImage p{
-  display: inline-block
-}
 .news{
   background-color: white;
   padding: 15px 0;
@@ -189,3 +180,60 @@ footer li a{
   border-top: solid 3px #6CC6C4;
   padding: 10px;
 }
+
+/* モバイルデザインで削除 */
+.mobile{
+  display: none;
+}
+
+
+
+/* レスポンシブ */
+@media(max-width: 600px){
+  .wrapper{
+    width: auto;
+    margin: 0 5%;
+  }
+  /* ヘッダー */
+  .header{
+    display: block;
+    text-align: center;
+  }
+  .headerLeft,
+  .headerRight{
+    margin: 30px auto;
+  }
+  .headerLeft{
+    width: auto;
+  }
+  .headerLeft img{
+    width: 250px;
+  }
+
+  /* ディスプレイ */
+  nav{
+    display: none;
+  }
+
+  /* メイン */
+  aside{
+    display: none;
+  }
+  article{
+    width: 100%;
+  }
+  .topImage{
+    width: auto;
+  }
+
+
+  /* モバイルで表示　PCでは非表示 */
+  .pc{
+    display: none;
+  }
+  .mobile{
+    display: block;
+  }
+}
+
+
