@@ -83,6 +83,10 @@ nav ul li a{
   gap: 100px;
   padding: 0 5%;
 }
+.work img:hover{
+  transform: scale(1.05,1.05);
+  transition: all 0.5s;
+}
 
 .work_title{
   display: inline-block;
