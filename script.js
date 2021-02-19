@@ -19,15 +19,16 @@ document.getElementById("btn-toppage").addEventListener("click",  function(){
 });
 
 
+// // スクロールで出現
+// window.addEventListener("scroll", function(){
+//   let scroll = document.documentElement.scrollTop;
+//   console.log(scroll);
+//   document.getElementById("scroll").textContent = scroll; //JS編集用
 
-window.addEventListener("scroll", function(){
-  let scroll = document.documentElement.scrollTop;
-  console.log(scroll);
-  document.getElementById("scroll").textContent = scroll;
-
-  // if(scroll > ){
-
-  // }
-
-
-});
+//   //navの出現
+//   if(scroll > 726){
+//     document.querySelector("nav").classList.add("show");
+//   }else{
+//     document.querySelector("nav").classList.remove("show");
+//   }
+// });

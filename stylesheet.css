@@ -37,6 +37,7 @@ margin:0 auto;
 nav{
   text-align: right;
   line-height: 66px;
+  position: fixed;
 }
 
 nav ul li{
@@ -46,6 +47,10 @@ nav ul li{
   font-family:YuMincho, 'Yu Mincho', serif;
   font-size: 16px;
   text-decoration:underline;
+}
+
+nav.show{
+ opacity: 0;
 }
 
 #btn-work:hover,
