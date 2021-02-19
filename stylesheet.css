@@ -1,7 +1,8 @@
 @charset "UTF-8";
 
-/* reset */
-@import url(reset.css);
+*{
+  margin: 0;
+}
 
 /* 共有 */
 html{
@@ -132,11 +133,14 @@ nav ul li a{
   margin-right: 50px;
 }
 
-#return{
+#toppage{
   margin-top:100px;
   text-align: center;
 }
-#return p{
+#toppage:hover{
+  cursor: pointer;
+}
+#toppage p{
   font-size: 12px;
   line-height: 15px;
 }

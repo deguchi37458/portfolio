@@ -1,10 +1,8 @@
 
-$(function(){
-  var ret = $("#return");
-  ret.click(function () {
-    $('body,html').animate({
-        scrollTop: 0
-    }, 500);
-    return false;
+
+document.getElementById("toppage").addEventListener("click",  function(){
+  window.scroll({
+    top: 0,
+    behavior: "smooth"
   });
 });
