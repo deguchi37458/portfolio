@@ -16,9 +16,6 @@ body{
 img{
   max-width: 100%;
 }
-a{
-  text-decoration: none;
-}
 p{
   color: #515151;
   font-size: 14px;
@@ -31,7 +28,6 @@ p{
 #header{
   background-color: #fff;
 }
-
 nav,
 #home{
 width:1096px;
@@ -46,20 +42,21 @@ nav{
 nav ul li{
   display: inline-block;
   margin-left: 30px;
-}
-nav ul li a{
   color: #515151;
   font-family:YuMincho, 'Yu Mincho', serif;
-  font-size: 14px;
+  font-size: 16px;
+  text-decoration:underline;
 }
 
 #home{
-  height: 570px;
+  height: 660px;
+  text-align: center;
 }
+
 #home h1{
   display: inline-block;
   font-size: 45px;
-  margin-top: 20%;
+  margin-top: 25%;
   font-family:YuMincho, 'Yu Mincho', serif;
   font-weight: lighter;
   color: #515151;
@@ -143,6 +140,15 @@ nav ul li a{
 #toppage p{
   font-size: 12px;
   line-height: 15px;
+}
+
+#scroll{
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  background-color: gray;
+  font-weight: bold;
+  color: #000;
 }
 
 
