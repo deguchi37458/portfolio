@@ -48,6 +48,12 @@ nav ul li{
   text-decoration:underline;
 }
 
+#btn-work:hover,
+#btn-about:hover{
+  cursor: pointer;
+}
+
+
 #home{
   height: 660px;
   text-align: center;
@@ -130,14 +136,14 @@ nav ul li{
   margin-right: 50px;
 }
 
-#toppage{
+#btn-toppage{
   margin-top:100px;
   text-align: center;
 }
-#toppage:hover{
+#btn-toppage:hover{
   cursor: pointer;
 }
-#toppage p{
+#btn-toppage p{
   font-size: 12px;
   line-height: 15px;
 }
