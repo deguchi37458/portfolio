@@ -22,6 +22,11 @@ p{
   letter-spacing: 2px;
   line-height: 30px;
 }
+h1,
+h2{
+  font-family:YuMincho, 'Yu Mincho', serif;
+  color: #515151;
+}
 
 
 /* ヘッダー */
@@ -62,10 +67,12 @@ nav ul li{
 #home h1{
   display: inline-block;
   font-size: 45px;
-  margin-top: 25%;
+  margin-top: 20%;
   font-family:YuMincho, 'Yu Mincho', serif;
   font-weight: lighter;
-  color: #515151;
+}
+#home h2{
+  font-size: 28px;
 }
 
 /* 包括 */
