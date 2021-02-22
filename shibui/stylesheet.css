@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 *{
   margin: 0px;
   padding: 0px;
@@ -34,7 +35,6 @@ img{
   max-width: 100%;
 }
 
-
 #news,
 #message,
 #works,
@@ -47,7 +47,17 @@ img{
 #home{
   background-image:url(img/home.png);
   background-size: cover;
+  background-position: center;
   min-height: 100vh;
+}
+#home h1{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%);
+  color: #FFF;
+  font-size: 55px;
+  white-space:nowrap;
 }
 .list{
   display: inline-block;
@@ -58,16 +68,14 @@ img{
   color: #FFF;
 }
 #scroll{
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translate(-50%);
   color: #FFF;
   font-size: 15px;
-  margin-top: 300px;
+  padding-top: 300px;
 }
-#home h1{
-  color: #FFF;
-  margin-top: 280px;
-  font-size: 55px;
-}
-
 
 /* タイトル共通 */
 .title{
@@ -86,8 +94,8 @@ h3{
   display: inline-block;
   border: solid 0.5px #454545;
   border-radius: 10px;
-  max-width: 1080px;
-  padding: 50px;
+  padding: 2em;
+  margin: 5px;
 }
 .news_list{
   display: flex;
@@ -103,12 +111,11 @@ h3{
   text-decoration: underline;
 }
 .news_list li:nth-child(1){
-  margin-right: 50px;
+  margin-right: .5em;
   font-weight: bold;
-  width: 150px;
+  min-width: 150px;
 }
 .news_list li:nth-child(2){
-  width: 400px;
 }
 .next{
   
@@ -127,8 +134,8 @@ h3{
 #message{
   background-image:url(img/message.png);
   background-size:cover;
-  width: 100%;
   height: 400px;
+  padding: 2em;
 }
 #message>p{
   margin-top: 60px;
@@ -168,12 +175,15 @@ h3{
   gap:40px;
   padding: 20px;
 }
+.csr_items{
+  margin-bottom:20px;
+}
 .csr_items:hover{
   transition: 1.0s;
   opacity: .5;
 }
 .csr_items h4{
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   color: #454545;
 }
 
@@ -182,44 +192,54 @@ h3{
   background-image: url(img/contact.png);
   background-size:cover;
   max-height:620px;
-  width: 100%;
 }
-form{
+table {
   display: inline-block;
-  background: rgb(255, 255, 255, .5);
-  max-width: 920px;
-  padding: 50px;
+  border-collapse: collapse;
+  text-align: center;
 }
-.form_item{
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-.form_item label{
+#form th{
   text-align: left;
-  width: 250px;
-  
+  width: 200px;
+  padding: 20px auto;
 }
-.form_item input,
-.form_item textarea{
-  resize: vertical;
-  width: 480px;
-  border:none;
-  font-size: 16px;
-  color: #454545;
+input[type="text"]{
+  display: block;
+  width: 200px;
+}
+textarea[name="content"]{
+  display: inline-block;
+  width: 400px;
 }
 input[type="submit"]{
-  font-size: 14px;
-  padding: 12px 32px;
-  border-radius: 5px;
-  background: lightgrey;
+  display: inline-block;
 }
-input[type="submit"]:hover{
-  cursor: pointer;
-}
-/* フッター */
-#footer p{
-  color: #454545;
-  font-size: 14px;
-  margin: 25px;
+
+
+@media(max-width: 768px){
+  nav{
+    display: none;
+  }
+
+  #home h1{
+    font-size: 30px;
+  }
+
+
+  #message>p{
+    font-size: 12px;
+  }
+
+  #works_contents{
+    display: block;
+  }
+
+  #csr_contents{
+    display: block;
+  }
+
+  .form_item label{
+    width: 120px;
+    font-size: 14px;
+  }
 }

@@ -5,8 +5,8 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>渋井設計事務所</title>
-  <!-- <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css"> -->
   <link href="stylesheet.css" rel="stylesheet">
+  <script src="script.js" defer></script>
 </head>
 <body>
    <div id="home">
@@ -138,25 +138,25 @@
        <h3>CONTACT</h3>
      </div>
 
-     <form action="">
-       <div class="form_item">
-        <label for="name">お名前</label>
-        <input type="text">
-       </div>
+       <table id="form">
+         <tbody>
+           <tr>
+             <th>お名前</th>
+             <td><input type="text"></td>
+           </tr>
+           <tr>
+             <th>メールアドレス</th>
+             <td><input type="text"></td>
+           </tr>
+           <tr>
+             <th>お問い合わせ内容</th>
+             <td><textarea name="content"></textarea></td>
+           </tr>
 
-       <div class="form_item">
-        <label for="email">メールアドレス</label>
-        <input type="text">
-       </div>
-
-       <div class="form_item">
-        <label for="message">お問い合わせ内容</label>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
-       </div>
+         </tbody>
+       </table>
 
        <input type="submit" value="送信">
-
-     </form>
 
    </div>
 
