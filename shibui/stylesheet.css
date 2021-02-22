@@ -192,29 +192,45 @@ h3{
   background-image: url(img/contact.png);
   background-size:cover;
   max-height:620px;
-}
-table {
+}form{
   display: inline-block;
-  border-collapse: collapse;
-  text-align: center;
+  background: rgb(255, 255, 255, .5);
+  max-width: 920px;
+  padding: 50px;
 }
-#form th{
+.form_item{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.form_item label{
   text-align: left;
-  width: 200px;
-  padding: 20px auto;
+  width: 250px;
+  
 }
-input[type="text"]{
-  display: block;
-  width: 200px;
-}
-textarea[name="content"]{
-  display: inline-block;
-  width: 400px;
+.form_item input,
+.form_item textarea{
+  resize: vertical;
+  width: 480px;
+  border:none;
+  font-size: 16px;
+  color: #454545;
 }
 input[type="submit"]{
-  display: inline-block;
+  font-size: 14px;
+  padding: 12px 32px;
+  border-radius: 5px;
+  background: lightgrey;
 }
-
+input[type="submit"]:hover{
+  cursor: pointer;
+}
+/* フッター */
+#footer p{
+  color: #454545;
+  font-size: 14px;
+  margin: 25px;
+}
 
 @media(max-width: 768px){
   nav{
