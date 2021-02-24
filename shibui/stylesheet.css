@@ -30,6 +30,7 @@ li{
 }
 a{
   text-decoration: none;
+
 }
 img{
   max-width: 100%;
@@ -74,7 +75,6 @@ img{
   transform: translate(-50%);
   color: #FFF;
   font-size: 15px;
-  padding-top: 300px;
 }
 
 /* タイトル共通 */
@@ -118,7 +118,6 @@ h3{
 .news_list li:nth-child(2){
 }
 .next{
-  
   text-align: right;
 }
 .next a{
@@ -134,12 +133,12 @@ h3{
 #message{
   background-image:url(img/message.png);
   background-size:cover;
-  height: 400px;
-  padding: 2em;
 }
-#message>p{
+#message_contents{
+  padding: 5vw;
+}
+#message_contents>p{
   margin-top: 60px;
-  font-size: 20px;
 }
 
 /* 事業内容 */
@@ -191,34 +190,39 @@ h3{
 #contact{
   background-image: url(img/contact.png);
   background-size:cover;
-  max-height:620px;
-}form{
-  display: inline-block;
+  margin: 0 auto;
+}
+form{
   background: rgb(255, 255, 255, .5);
-  max-width: 920px;
-  padding: 50px;
+  padding: 2vw;
+  margin: 2vw;
 }
 .form_item{
   display: flex;
-  justify-content: center;
+  justify-content:left;
   margin-bottom: 20px;
 }
 .form_item label{
+  display: block;
   text-align: left;
-  width: 250px;
-  
+  min-width: 250px;
 }
-.form_item input,
+.form_item input{
+  min-width: 250px;
+  height: 20px;
+  border: none;
+
+}
 .form_item textarea{
   resize: vertical;
-  width: 480px;
+  width: 100%;
   border:none;
   font-size: 16px;
   color: #454545;
 }
 input[type="submit"]{
   font-size: 14px;
-  padding: 12px 32px;
+  padding: 8px 26px;
   border-radius: 5px;
   background: lightgrey;
 }
@@ -233,6 +237,9 @@ input[type="submit"]:hover{
 }
 
 @media(max-width: 768px){
+  p {
+    font-size: 16px;
+  }
   nav{
     display: none;
   }
@@ -240,12 +247,7 @@ input[type="submit"]:hover{
   #home h1{
     font-size: 30px;
   }
-
-
-  #message>p{
-    font-size: 12px;
-  }
-
+  
   #works_contents{
     display: block;
   }
@@ -253,9 +255,14 @@ input[type="submit"]:hover{
   #csr_contents{
     display: block;
   }
-
+  .form{
+    min-width: 320px;
+  }
+  .form_item {
+    display: block;
+    text-align: left;
+  }
   .form_item label{
     width: 120px;
-    font-size: 14px;
   }
 }
