@@ -34,6 +34,8 @@ a{
 }
 img{
   max-width: 100%;
+  vertical-align: top;
+  
 }
 
 #news,
@@ -68,6 +70,11 @@ img{
 .list a{
   color: #FFF;
 }
+
+nav.show {
+  display: none;
+}
+
 #scroll{
   position: absolute;
   bottom: 8%;
@@ -135,7 +142,7 @@ h3{
   background-size:cover;
 }
 #message_contents{
-  padding: 5vw;
+  padding: max(50px, 5vw);
 }
 #message_contents>p{
   margin-top: 60px;
@@ -242,6 +249,17 @@ input[type="submit"]:hover{
   }
   nav{
     display: none;
+  }
+  nav.show{
+    display: block;
+    position: fixed;
+    width: 30px;
+    top: 8px;
+    right: 8px;
+  }
+  nav.show p{
+    font-size: 12px;
+    line-height: 0.5rem;
   }
 
   #home h1{
