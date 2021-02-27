@@ -10,6 +10,7 @@ html{
   font-size: 100%;
 }
 body{
+  width: 100%;
   background-color: #f0f0f0;
   font-family: 'Dosis', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", cursive;
   font-size: 16px;
@@ -25,90 +26,81 @@ p{
 }
 h1,
 h2{
-  font-family:YuMincho, 'Yu Mincho', serif;
   color: #515151;
 }
 
 /* ヘッダー */
-#header{
+#home{
+  position: relative;
+  width: 100%;
+  height: 750px;
+  margin: 0 auto;
   background-color: #fff;
 }
-nav,
-#home{
-width:1096px;
-margin:0 auto;
-}
-
 nav{
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
   text-align: right;
-  line-height: 66px;
 }
-
 nav ul li{
   display: inline-block;
-  margin-left: 30px;
+  margin: 10px 20px;
   color: #515151;
-  font-family:YuMincho, 'Yu Mincho', serif;
-  font-size: 16px;
-  text-decoration:underline;
+  font-size: 12px;
 }
-
-#btn-work:hover,
-#btn-about:hover{
+nav ul li:hover{
+  opacity: 0.7;
   cursor: pointer;
 }
-
-
-#home{
-  height: 660px;
+#title{
+  position: absolute;
+  top: 300px;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
 }
-
 #home h1{
-  display: inline-block;
-  font-size: 45px;
-  margin-top: 20%;
-  font-family:YuMincho, 'Yu Mincho', serif;
+  font-size: 30px;
   font-weight: lighter;
 }
 #home h2{
-  font-size: 28px;
+  font-size: 18px;
   font-weight: lighter;
 }
 
 /* 包括 */
-#wrapper{
+#container{
   margin: 0 auto;
-  width: 1096px;
+  background-color: #f0f0f0;
 }
 
 #work,
 #comment,
-#skill{
+#skill,
+#about{
   margin:100px auto;
+  max-width: 90%;
 }
 
 /* 制作実績 */
 #work{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 100px;
-  padding: 0 5%;
 }
 .work img:hover{
-  transform: scale(1.05,1.05);
-  transition: all 0.5s;
+  opacity: 0.7;
 }
-
 .work_title{
   display: inline-block;
   text-align: left;
-  font-family: YuMincho, 'Yu Mincho', serif;
   font-size: 16px;
   font-weight: lighter;
   color: #515151;
 }
-
 #skill{
   display: flex;
   flex-wrap: wrap;
@@ -118,7 +110,6 @@ nav ul li{
   display: flex;
   margin-bottom: 40px;
 }
-
 #skill div img{
   width:60px;
   height:60px;
@@ -127,14 +118,12 @@ nav ul li{
 .skill_title{
   font-weight: bolder;
 }
-
 /* フッター */
 #footer{
   background-color: #fff;
   padding:100px 0px 50px 0px;
 }
 #about{
-  width: 1096px;
   margin: 0 auto;
   display: flex;
 }
@@ -169,18 +158,11 @@ nav ul li{
 
 
 @media(max-width: 600px){
-  nav,
-  #home,
-  #wrapper,
-  #about{
-    width:330px;
+  
+  #work{
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
   }
-
-  #home h1{
-    font-size:35px;
-    margin-top: 50%;
-  }
-
   #about img{
     display: none;
   }
