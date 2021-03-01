@@ -80,7 +80,6 @@ nav ul li:hover{
 
 #work,
 #comment,
-#skill,
 #about{
   margin:100px auto;
   max-width: 90%;
@@ -90,7 +89,7 @@ nav ul li:hover{
 #work{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 100px;
+  gap: 10%;
 }
 .work img:hover{
   opacity: 0.7;
@@ -102,23 +101,7 @@ nav ul li:hover{
   font-weight: lighter;
   color: #515151;
 }
-#skill{
-  display: flex;
-  flex-wrap: wrap;
-}
-.skill{
-  width: 50%;
-  display: flex;
-  margin-bottom: 40px;
-}
-#skill div img{
-  width:60px;
-  height:60px;
-  margin-right: 24px;
-}
-.skill_title{
-  font-weight: bolder;
-}
+
 /* フッター */
 #footer{
   background-color: #fff;
@@ -162,7 +145,6 @@ nav ul li:hover{
   
   #work{
     grid-template-columns: 1fr 1fr;
-    gap: 50px;
   }
   #about img{
     display: none;
