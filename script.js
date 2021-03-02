@@ -1,17 +1,10 @@
 
-// スクロールで出現
-window.addEventListener("scroll", function(){
-  let scroll = document.documentElement.scrollTop;
-  console.log(scroll);
-  document.getElementById("scroll").textContent = scroll; //JS編集用
-
-  //navの出現
-  if(scroll > 726){
-    document.querySelector("nav").classList.add("show");
-  }else{
-    document.querySelector("nav").classList.remove("show");
-  }
-});
+// スクロールJS編集用
+// window.addEventListener("scroll", function(){
+//   let scroll = document.documentElement.scrollTop;
+//   console.log(scroll);
+//   document.getElementById("scroll").textContent = scroll; //JS編集用
+// });
 
 
 // ボタンスクロール
@@ -41,4 +34,14 @@ document.getElementById("btn-toppage").addEventListener("click",  function(){
     top: 0,
     behavior: "smooth"
   });
+});
+//
+
+// workポップアップスクリーン
+document.getElementById("shibui").addEventListener("click", function(){
+  document.getElementById("shibui-popup").classList.add("show");
+});
+
+document.getElementById("shibui-popup").addEventListener("click", function(){
+  document.getElementById("shibui-popup").classList.remove("show");
 });
