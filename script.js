@@ -45,3 +45,11 @@ document.getElementById("shibui").addEventListener("click", function(){
 document.getElementById("shibui-popup").addEventListener("click", function(){
   document.getElementById("shibui-popup").classList.remove("show");
 });
+// workポップアップスクリーン
+document.getElementById("dentalClinic").addEventListener("click", function(){
+  document.getElementById("dentalClinic-popup").classList.add("show");
+});
+
+document.getElementById("dentalClinic-popup").addEventListener("click", function(){
+  document.getElementById("dentalClinic-popup").classList.remove("show");
+});
