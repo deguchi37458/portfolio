@@ -17,6 +17,7 @@ body{
 }
 img{
   max-width: 100%;
+  display: block;
 }
 p{
   color: #515151;
@@ -125,6 +126,9 @@ nav ul li:hover{
   color: #fff;
   font-size: 12px;
 }
+.popup a{
+  color: #fff;
+}
 .popup-contents{
   display: flex;
   flex-direction: row;
@@ -200,3 +204,4 @@ nav ul li:hover{
   .popup-contents aside{
     width: 100%;
   }
+}

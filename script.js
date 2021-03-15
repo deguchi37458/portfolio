@@ -38,6 +38,15 @@ document.getElementById("btn-toppage").addEventListener("click",  function(){
 //
 
 // workポップアップスクリーン
+document.getElementById("awesomeCamera").addEventListener("click", function(){
+  document.getElementById("awesomeCamera-popup").classList.add("show");
+});
+
+document.getElementById("awesomeCamera-popup").addEventListener("click", function(){
+  document.getElementById("awesomeCamera-popup").classList.remove("show");
+});
+
+// workポップアップスクリーン
 document.getElementById("shibui").addEventListener("click", function(){
   document.getElementById("shibui-popup").classList.add("show");
 });
